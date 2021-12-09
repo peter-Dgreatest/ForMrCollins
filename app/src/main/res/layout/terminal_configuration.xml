@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EAEEF0"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/img">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"
+            android:text="Settings"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:drawableTint="#7A7A7A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/mulishblack"
+            android:text="Notifications"
+            android:layout_marginTop="10dp"
+            android:drawableTint="#7A7A7A"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/mulishregular"
+                android:text="Payment Channels"
+                android:layout_marginTop="8dp"
+                android:drawableTint="#7A7A7A"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:layout_marginBottom="-10dp"
+                android:text="@string/succPay"
+                android:backgroundTint="#ff4400"
+                app:thumbTint="@color/white"
+                app:trackTint="#ff4400"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/failedPay"
+                android:backgroundTint="#ff4400"
+                app:thumbTint="@color/white"
+                app:trackTint="#ff4400"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/mulishregular"
+                android:text="Disputes"
+                android:layout_marginTop="8dp"
+                android:drawableTint="#7A7A7A"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:layout_marginBottom="-10dp"
+                android:text="Logged Disputes"
+                android:backgroundTint="#ff4400"
+                app:thumbTint="@color/white"
+                app:trackTint="#ff4400"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="Resolved Disputes"
+                android:layout_marginBottom="-10dp"
+                android:backgroundTint="#ff4400"
+                app:thumbTint="@color/white"
+                app:trackTint="#ff4400"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="Disputes Reminders"
+                android:backgroundTint="#ff4400"
+                app:thumbTint="@color/white"
+                app:trackTint="#ff4400"/>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/mulishblack"
+            android:text="Preference"
+            android:layout_marginTop="10dp"
+            android:drawableTint="#7A7A7A"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/mulishregular"
+                android:text="Payment Earning Channel"
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:drawableTint="#7A7A7A"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settlement Account"
+                        android:fontFamily="@font/lato"
+                        android:layout_marginTop="9sp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="3sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet Account"
+                        android:fontFamily="@font/lato"
+                        android:layout_marginTop="9sp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="3sp"/>
+
+                </RelativeLayout>
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/mulishregular"
+                android:text="Email Prefrences"
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:drawableTint="#7A7A7A"/>
+
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:layout_marginBottom="-10dp"
+                android:text="Transaction emails"
+                android:backgroundTint="#ff4400"
+                app:thumbTint="@color/white"
+                app:trackTint="#ff4400"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

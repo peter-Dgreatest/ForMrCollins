@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E4E3E3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/ww"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/as"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terminals"
+                    android:padding="10dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#ff4400"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/ovalblue"
+                        android:text="03"
+                        app:layout_constraintDimensionRatio="1:1"
+                        android:gravity="center"
+                        android:id="@+id/tt1"
+                        android:textColor="#3F51B5"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/tt1"
+                        android:text="All Issued Terminals"
+                        android:textColor="#3F51B5"
+                        android:gravity="center|bottom"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/oval"
+                        android:text="03"
+                        android:textColor="#4CAF50"
+                        app:layout_constraintDimensionRatio="1:1"
+                        android:gravity="center"
+                        android:id="@+id/tt11"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/tt11"
+                        android:text="Total Active Terminals"
+                        android:textColor="#4CAF50"
+                        android:gravity="center|bottom"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/ovalash"
+                        android:text="03"
+                        android:textColor="#868786"
+                        app:layout_constraintDimensionRatio="1:1"
+                        android:gravity="center"
+                        android:id="@+id/tt12"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#868786"
+                        app:layout_constraintTop_toBottomOf="@id/tt12"
+                        android:text="Total Damaged Terminals"
+                        android:gravity="center|bottom"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@drawable/ovalpink"
+                        android:text="03"
+                        android:textColor="#ff4400"
+                        app:layout_constraintDimensionRatio="1:1"
+                        android:gravity="center"
+                        android:id="@+id/tt13"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff4400"
+                        app:layout_constraintTop_toBottomOf="@id/tt13"
+                        android:text="Total Suspended Terminals"
+                        android:gravity="center|bottom" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edit"
+        app:layout_constraintTop_toBottomOf="@id/ww"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/bottom_nav_loader"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

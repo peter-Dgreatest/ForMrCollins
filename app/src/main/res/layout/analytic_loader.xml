@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tt1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="00:47"/>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="-3dp"
+        android:background="#9C9A9A"
+        app:layout_constraintTop_toBottomOf="@id/tt2"
+        app:layout_constraintLeft_toLeftOf="@id/tt2"
+        app:layout_constraintRight_toRightOf="@id/tt2"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_circle_24"
+        app:layout_constraintLeft_toRightOf="@id/tt1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tt2"
+        app:tint="#4CAF50"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tt2"
+        app:layout_constraintLeft_toRightOf="@id/tt2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        android:text="Set payment method to: bank"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ovalfade.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable/as.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.18611111111111112" />
+        <entry key="app/src/main/res/drawable/ic_baseline_notifications_none_24.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ic_outline_navigation_24.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/oval.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ovalash.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ovalblack.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ovalblue.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/drawable/ovalpink.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/rounded_edit.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/rounded_editText.xml" value="0.18611111111111112" />
+        <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/drawable/rounded_top.xml" value="0.18611111111111112" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/all_terminal_pos.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/all_web_pos.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/analytic_loader.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/bottom_nav_loader.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/customer_detail.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/customer_detail_fragment.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/edit_customer_page.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/payment_analytic.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/payment_detail.xml" value="0.4166666666666667" />
+        <entry key="app/src/main/res/layout/payment_detail_fragment.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/pos_all_transaction__details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/pos_setting.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/productpage.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/terminal_configuration.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/terminal_loaders.xml" value="0.7281553398058253" />
+        <entry key="app/src/main/res/layout/terminal_pos.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/terminalpostransactions.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/terminalselect.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/transaction_loader.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/web_pos.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

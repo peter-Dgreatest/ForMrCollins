@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ForCollins</string>
+    <string name="no_trans">No transactions has been made on this account</string>
+    <string name="searchHint">Search with reference id or customer email</string>
+    <string name="status">Status</string>
+    <string name="channel">Channel</string>
+    <string name="datePeriod">Date Period</string>
+    <string name="succPay">Successful Payments</string>
+    <string name="failedPay">Failed Payments</string>
+    <string name="select_terminal">Select Terminal</string>
+    <string name="searchHintT">Search with reference ID or terminal ID</string>
+    <string name="select_terminal_pos">Select your terminal POS</string>
+</resources>

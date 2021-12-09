@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ff4400">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/header"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/mulishblack"
+        android:text="Web POS"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:background="@drawable/rounded_edit"
+        android:id="@+id/ww"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_date_range_24"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham"
+                    android:text="NGN 0.0"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:gravity="center"
+                    android:id="@+id/tt1"
+                    android:textSize="21sp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tt1"
+                    android:text="Gross Revenue"
+                    android:gravity="center|bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham"
+                    android:text="NGN 0.0"
+                    android:textStyle="bold"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Net Revenue"
+                    android:gravity="center|bottom"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_top"
+        app:layout_constraintTop_toBottomOf="@id/ww"
+        app:layout_constraintBottom_toTopOf="@id/btn_nav"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Recent Transactions"
+            style="@style/HeaderText"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ff4400"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:layout_marginRight="5dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_weight="3"
+                android:layout_marginRight="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="21sp"
+                android:text="@string/no_trans"/>
+
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            style="@style/MyFloatingActionButton"
+            android:src="@drawable/ic_baseline_more_vert_24_white"
+            app:rippleColor="@color/tranmain"
+            android:tint="@color/white"
+            android:background="#ff4400"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View all transactions"
+            android:fontFamily="@font/lato"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+
+
+    <include layout="@layout/bottom_nav_loader"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
