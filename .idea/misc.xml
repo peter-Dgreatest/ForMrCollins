@@ -30,14 +30,14 @@
         <entry key="app/src/main/res/layout/payment_detail_fragment.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/pos_all_transaction__details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/pos_setting.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/productpage.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/productpage.xml" value="0.33" />
         <entry key="app/src/main/res/layout/terminal_configuration.xml" value="0.23143115942028986" />
-        <entry key="app/src/main/res/layout/terminal_loaders.xml" value="0.7281553398058253" />
+        <entry key="app/src/main/res/layout/terminal_loaders.xml" value="0.4211971068478573" />
         <entry key="app/src/main/res/layout/terminal_pos.xml" value="0.25" />
         <entry key="app/src/main/res/layout/terminalpostransactions.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/terminalselect.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/transaction_loader.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/web_pos.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/web_pos.xml" value="0.25" />
       </map>
     </option>
   </component>
