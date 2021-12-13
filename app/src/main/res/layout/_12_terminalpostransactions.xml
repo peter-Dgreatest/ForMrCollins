@@ -178,23 +178,74 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_edit"
-        app:layout_constraintTop_toBottomOf="@id/ww"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@id/ww">
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            />
+            android:layout_margin="10dp" />
     </LinearLayout>
 
-    <include layout="@layout/bottom_nav_loader"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/MyFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ff4400"
+        android:src="@drawable/ic_baseline_more_vert_24_white"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/tranmain" />
+
+
+    <LinearLayout
+        android:id="@+id/fab2"
+        style="@style/MyFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_top"
+        android:src="@drawable/ic_baseline_more_vert_24_white"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@id/fab"
+        app:rippleColor="@color/tranmain"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_settings_24"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/ic_baseline_youtube_searched_for_24"
+            app:tint="#ff4400" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottom_nav_loader"
+        tools:layout_editor_absoluteY="617dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

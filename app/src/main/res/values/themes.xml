@@ -16,6 +16,12 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <style name="Theme.ForEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#070707</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 
     <style name="HeaderText">
 

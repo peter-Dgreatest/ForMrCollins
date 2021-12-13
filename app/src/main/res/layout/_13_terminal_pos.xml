@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#ff4400">
+    android:background="#064A72">
 
 
 
@@ -19,36 +19,20 @@
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/header"
         android:textSize="18sp"
-        android:fontFamily="@font/mulishblack"
-        android:text="Transactions"
         android:textColor="@color/white"
-        android:drawableRight="@drawable/ic_outline_filter_alt_24"
-        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"/>
+        android:fontFamily="@font/mulishblack"
+        android:text="Terminal POS - 349834785"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:drawableRight="@drawable/ic_baseline_menu_24"
+        android:drawableTint="@color/white"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/search"
-        android:hint="@string/searchHint"
-        android:background="@drawable/rounded_edittext"
-        app:layout_constraintTop_toBottomOf="@id/header">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:drawableRight="@drawable/ic_baseline_youtube_searched_for_24"
-            android:drawableTint="#80ACABAB"
-            android:layout_height="match_parent"/>
-    </com.google.android.material.textfield.TextInputLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/search"
+        app:layout_constraintTop_toBottomOf="@id/header"
         android:background="@drawable/rounded_edit"
-        android:visibility="gone"
         android:id="@+id/ww"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
@@ -56,12 +40,40 @@
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/channel">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_date_range_24"
             android:layout_gravity="right"
+            android:foregroundGravity="right"
+            android:layout_alignParentRight="true"
             android:layout_margin="10dp"/>
+        
+    </RelativeLayout>
 
 
         <LinearLayout
@@ -99,7 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/tt1"
-                    android:text="Gross Revenue"
+                    android:text="All Terminal Gross Revenue"
                     android:gravity="center|bottom"/>
             </LinearLayout>
 
@@ -125,7 +137,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Net Revenue"
+                    android:text="All Terminal Net Revenue"
                     android:gravity="center|bottom"/>
             </LinearLayout>
 
@@ -143,156 +155,125 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_top"
-        app:layout_constraintTop_toBottomOf="@id/ww"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/btn_nav"
-        android:orientation="vertical">
-
+        app:layout_constraintTop_toBottomOf="@id/ww">
 
 
         <TextView
+            style="@style/HeaderText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
-            android:text="Web POS Transactions"
-            style="@style/HeaderText"/>
+            android:layout_marginTop="20dp"
+            android:text="Recent Transactions" />
 
         <View
             android:layout_width="40dp"
             android:layout_height="6dp"
-            android:layout_marginTop="7dp"
             android:layout_marginLeft="20dp"
-            android:background="#ff4400"/>
+            android:layout_marginTop="7dp"
+            android:background="#ff4400" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="5dp"
-            android:layout_weight="3"
-            android:layout_marginRight="5dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3">
 
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="5dp"
-                android:orientation="horizontal"
-                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
                 android:layout_weight="3"
-                android:layout_marginRight="5dp">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
             </androidx.recyclerview.widget.RecyclerView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lato"
                 android:layout_gravity="center"
+                android:fontFamily="@font/lato"
                 android:gravity="center"
-                android:textSize="21sp"
-                android:text="@string/no_trans"/>
+                android:text="@string/no_trans"
+                android:textSize="21sp" />
 
         </FrameLayout>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            style="@style/MyFloatingActionButton"
-            android:src="@drawable/ic_baseline_more_vert_24_white"
-            app:rippleColor="@color/tranmain"
-            android:tint="@color/white"
-            android:background="#ff4400"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/lato"
+            android:text="View all transactions" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/MyFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ff4400"
+        android:src="@drawable/ic_baseline_more_vert_24_white"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/tranmain" />
+
+
+    <LinearLayout
+        android:id="@+id/fab2"
+        style="@style/MyFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_top"
+        android:src="@drawable/ic_baseline_more_vert_24_white"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@id/fab"
+        app:rippleColor="@color/tranmain"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_settings_24"
             />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/ic_baseline_youtube_searched_for_24"
+            app:tint="#ff4400" />
+
     </LinearLayout>
 
 
 
     <include layout="@layout/bottom_nav_loader"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="vertical"
-        android:background="@drawable/rounded_top"
-        android:padding="10dp"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Filter"
-            android:fontFamily="@font/gotham"
-            android:textSize="17sp"
-            android:layout_margin="10dp"
-            android:drawableRight="@drawable/ic_baseline_close_24"
-            android:drawableTint="@color/black"/>
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/status">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:tooltipText="Status"
-                android:background="@drawable/rounded_edittext"
-                android:inputType="none"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/channel">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edittext"
-                android:inputType="none"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:background="@drawable/rounded_edittext"
-            android:layout_height="wrap_content"
-            android:hint="@string/datePeriod">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edittext"
-                android:inputType="none"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittext"
-            android:padding="10dp"
-            android:backgroundTint="#ff4400"
-            android:textColor="@color/white"
-            android:text="Filter Transactions"/>
-    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

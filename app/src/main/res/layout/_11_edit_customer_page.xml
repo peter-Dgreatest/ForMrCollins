@@ -52,13 +52,18 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:hint="First Name"
-                android:background="@drawable/rounded_edittext"
+                style="@style/Theme.ForEditText"
                 android:layout_margin="5dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
                 android:layout_height="wrap_content">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edittext"
+                    style="@style/Theme.ForEditText"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/black"
                     android:text="Sunday"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -66,13 +71,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:hint="Last Name"
-                android:background="@drawable/rounded_edittext"
+                style="@style/Theme.ForEditText"
                 android:layout_margin="5dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
                 android:layout_height="wrap_content">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edittext"
+                    android:textCursorDrawable="@null"
                     android:text="Daniel"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -80,13 +88,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:hint="Phone Number"
-                android:background="@drawable/rounded_edittext"
+                style="@style/Theme.ForEditText"
                 android:layout_margin="5dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
                 android:layout_height="wrap_content">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edittext"
+                    android:textCursorDrawable="@null"
                     android:text="08163349199"
                     android:inputType="phone"
                     />
@@ -95,13 +106,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:hint="Email"
-                android:background="@drawable/rounded_edittext"
+                style="@style/Theme.ForEditText"
                 android:layout_margin="5dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
                 android:layout_height="wrap_content">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edittext"
+                    android:textCursorDrawable="@null"
                     android:text="Sunday@mail.com"
                     android:inputType="textEmailAddress"
                     />
@@ -112,6 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Save"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/rounded_edittext"
                 android:backgroundTint="#ff4400"
                 android:textColor="@color/white"/>
