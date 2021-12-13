@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ovalfade.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable-v24/rounded_edit_2.xml" value="0.140625" />
         <entry key="app/src/main/res/drawable/as.xml" value="0.19444444444444445" />
         <entry key="app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.18611111111111112" />
         <entry key="app/src/main/res/drawable/ic_baseline_notifications_none_24.xml" value="0.19444444444444445" />
@@ -23,6 +24,7 @@
         <entry key="app/src/main/res/layout/_13_terminal_pos.xml" value="0.16070084827696582" />
         <entry key="app/src/main/res/layout/_14_all_terminal_pos.xml" value="0.16" />
         <entry key="app/src/main/res/layout/_16_terminalselect.xml" value="0.12447916666666667" />
+        <entry key="app/src/main/res/layout/_20_pop_up.xml" value="0.67" />
         <entry key="app/src/main/res/layout/_2web_pos.xml" value="0.22" />
         <entry key="app/src/main/res/layout/_4all_web_pos.xml" value="0.22056159420289856" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1503623188405797" />
