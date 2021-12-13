@@ -10,4 +10,32 @@
     <string name="select_terminal">Select Terminal</string>
     <string name="searchHintT">Search with reference ID or terminal ID</string>
     <string name="select_terminal_pos">Select your terminal POS</string>
+
+
+    <string-array name="status">
+        <item>Show All</item>
+        <item>Successful</item>
+        <item>Abandoned</item>
+        <item>Failed</item>
+        <item>Refunded</item>
+        <item>Ongoing</item>
+        <item>Pending</item>
+    </string-array>
+
+
+    <string-array name="channel">
+        <item>Show All</item>
+        <item>Card</item>
+        <item>USSD</item>
+        <item>Bank</item>
+        <item>Wallet</item>
+    </string-array>
+
+
+    <string-array name="datePeriod">
+        <item>All time</item>
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+    </string-array>
 </resources>

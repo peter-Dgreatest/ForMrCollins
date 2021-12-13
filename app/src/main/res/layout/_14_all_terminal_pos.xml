@@ -149,7 +149,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_top"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/btn_nav"
+        app:layout_constraintBottom_toTopOf="@id/include2"
         app:layout_constraintTop_toBottomOf="@id/ww">
 
 
@@ -274,51 +274,46 @@
             android:text="Filter"
             android:textSize="17sp" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edit"
-            android:hint="@string/status">
+            android:spinnerMode="dialog"
+            android:prompt="Status"
+            android:entries="@array/status"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:tooltipText="Status"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="none"
+            />
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edit"
-                android:inputType="none" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edit"
-            android:hint="@string/channel">
+            android:background="@drawable/rounded_edittext"
+            android:spinnerMode="dialog"
+            android:prompt="Channel"
+            android:layout_margin="10dp"
+            android:entries="@array/channel"
+            android:padding="15dp"
+            android:tooltipText="Channel"
+            android:inputType="none"
+            />
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edit"
-                android:inputType="none" />
 
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edit"
-            android:hint="@string/datePeriod">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edit"
-                android:inputType="none" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
+            android:background="@drawable/rounded_edittext"
+            android:prompt="Date Period"
+            android:layout_margin="10dp"
+            android:entries="@array/datePeriod"
+            android:padding="15dp"
+            android:tooltipText="Date Period"
+            android:inputType="none"
+            />
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
